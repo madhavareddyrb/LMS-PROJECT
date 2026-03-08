@@ -7,25 +7,46 @@ import Typography from "@mui/material/Typography";
 
 export default function MediaCard() {
   return (
-    <Card sx={{ maxWidth: 345 }}>
-      <CardMedia
-        sx={{ height: 140 }}
-        image="/static/images/cards/contemplative-reptile.jpg"
-        title="green iguana"
-      />
-      <CardContent>
-        <Typography gutterBottom variant="h5" component="div">
-          Lizard
-        </Typography>
-        <Typography variant="body2" sx={{ color: "text.secondary" }}>
-          Lizards are a widespread group of squamate reptiles, with over 6,000
-          species, ranging across all continents except Antarctica
-        </Typography>
-      </CardContent>
-      <CardActions>
-        <Button size="small">Share</Button>
-        <Button size="small">Learn More</Button>
-      </CardActions>
-    </Card>
+    <>
+      <Card sx={{ maxWidth: 350 }}>
+        <CardMedia
+          sx={{ height: 200, width: 200 }}
+          image="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c3/Python-logo-notext.svg/1280px-Python-logo-notext.svg.png"
+          title="green iguana"
+        />
+        <CardContent>
+          <Typography gutterBottom variant="h4" component="div">
+            Python
+          </Typography>
+          <Typography variant="body2" sx={{ color: "text.secondary" }}>
+            Python is a programming language that lets you work quickly and
+            integrate systems more effectively
+          </Typography>
+        </CardContent>
+        <CardActions>
+          <Button size="small">More Details </Button>
+        </CardActions>
+      </Card>
+
+      <Card sx={{ maxWidth: 350 }}>
+        <CardMedia
+          sx={{ height: 200, width: 200 }}
+          image="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c3/Python-logo-notext.svg/1280px-Python-logo-notext.svg.png"
+          title="green iguana"
+        />
+        <CardContent>
+          <Typography gutterBottom variant="h4" component="div">
+            Python
+          </Typography>
+          <Typography variant="body2" sx={{ color: "text.secondary" }}>
+            Python is a programming language that lets you work quickly and
+            integrate systems more effectively
+          </Typography>
+        </CardContent>
+        <CardActions>
+          <Button size="small">More Details </Button>
+        </CardActions>
+      </Card>
+    </>
   );
 }
