@@ -2,7 +2,7 @@ import Card from "@mui/material/Card";
 import CardActions from "@mui/material/CardActions";
 import CardContent from "@mui/material/CardContent";
 import CardMedia from "@mui/material/CardMedia";
-import Button from "@mui/material/Button";
+import {Button, Box, Paper} from "@mui/material";
 import Typography from "@mui/material/Typography";
 import "./CourseCards.css"
 export default function MediaCard() {
@@ -43,27 +43,61 @@ export default function MediaCard() {
   const displayCourses = coursesList.map(function (course) {
     return (
       <>
-      <div className="courseCards">
+        {/* <Box
+          sx={{
+            display: "flex",
+            flexWrap: "wrap",
+            "& > :not(style)": {
+              m: 1,
+              width: 470,
+              height: 470,
+            },
+          }}
+        >
+          <Paper elevation={0} />
+          <div className="courseCards">
+            <Card sx={{ maxWidth: 450, maxHeight: 450 }}>
+              <CardMedia
+                sx={{ height: 170, width: 400 }}
+                image={course.course_image}
+                title="green iguana"
+              />
+              <CardContent>
+                <Typography gutterBottom variant="h5" component="div">
+                  {course.course_name}
+                </Typography>
+                <Typography variant="body2" sx={{ color: "text.secondary" }}>
+                  {course.course_description}
+                </Typography>
+              </CardContent>
+              <CardActions>
+                <Button size="small">More Details</Button>
+              </CardActions>
+            </Card>
+          </div>
 
-        <Card sx={{ maxWidth: 450, maxHeight:450 }}>
-          <CardMedia
-            sx={{ height: 170, width: 360, }}
-            image={course.course_image}
-            title="green iguana"
-          />
-          <CardContent>
-            <Typography gutterBottom variant="h5" component="div">
-              {course.course_name}
-            </Typography>
-            <Typography variant="body2" sx={{ color: "text.secondary" }}>
-              {course.course_description}
-            </Typography>
-          </CardContent>
-          <CardActions>
-            <Button size="small">More Details</Button>
-          </CardActions>
-        </Card>
-            </div>
+          <Paper />
+        </Box> */}
+        <div className="courseCards">
+          <Card sx={{ maxWidth: 450, maxHeight: 450 }}>
+            <CardMedia
+              sx={{ height: 170, width: 400 }}
+              image={course.course_image}
+              title="green iguana"
+            />
+            <CardContent>
+              <Typography gutterBottom variant="h5" component="div">
+                {course.course_name}
+              </Typography>
+              <Typography variant="body2" sx={{ color: "text.secondary" }}>
+                {course.course_description}
+              </Typography>
+            </CardContent>
+            <CardActions>
+              <Button size="small">More Details</Button>
+            </CardActions>
+          </Card>
+        </div>
       </>
     );
   });

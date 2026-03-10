@@ -9,6 +9,6 @@
   padding: 1%;
   background: rgb(248, 247, 247);
   flex-wrap: wrap;
-  flex-grow: inherit;
+  flex-grow: initial;
 }
 
