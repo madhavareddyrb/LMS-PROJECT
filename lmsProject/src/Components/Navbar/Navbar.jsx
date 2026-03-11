@@ -13,7 +13,7 @@ import Tooltip from "@mui/material/Tooltip";
 import MenuItem from "@mui/material/MenuItem";
 import AdbIcon from "@mui/icons-material/Adb";
 
-const pages = ["Courses", "Sign Up", "Sign In", "Dashboard"];
+const pages = ["Home", "Courses", "Categories", "Pricing"];
 const settings = ["Profile", "Account Settings",  "Logout"];
 
 function Navbar() {
@@ -86,7 +86,7 @@ function Navbar() {
             >
               {pages.map((page) => (
                 <MenuItem key={page} onClick={handleCloseNavMenu}>
-                  <Typography sx={{ textAlign: "center" }}>{page}</Typography>
+                  <Typography sx={{ textAlign: "center" }}>| {page}</Typography>
                 </MenuItem>
               ))}
             </Menu>
@@ -117,7 +117,7 @@ function Navbar() {
               onClick={handleCloseNavMenu}
                 sx={{ my: 2, color: "white", display: "block" }}
               >
-                {page}
+              {page}
               </Button>
             ))}
           </Box>
