@@ -21,8 +21,11 @@ export default function HeroBanner() {
           high-quality video lectures, real projects, quizzes, and
           certifications.
         </Typography>
+        <button>
+          
+        </button>
       </Box>
-      <Box sx={{ width: "50%", maxWidth: "50%", alignContent:"center", justifyContent:"center" }}>
+      <Box sx={{  maxWidth: "50%", alignContent:"center", justifyContent:"center" }}>
         <Typography>50,000 + Students</Typography>
         <Typography>200+ Courses</Typography>
         <Typography>100+ Expert Mentores</Typography>
