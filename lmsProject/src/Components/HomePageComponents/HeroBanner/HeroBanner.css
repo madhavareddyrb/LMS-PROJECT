@@ -1,0 +1,38 @@
+.main-course-cards {
+  display: flex;
+  background: #1976d2;
+}
+
+.hero-banner {
+  width: 100vw;
+  margin: 2rem 7rem;
+  gap: 1rem;
+}
+
+.action-buttons {
+  margin: 1rem;
+  padding: 1rem;
+  font-size: 1rem;
+  border: none;
+  border-radius: 0.8rem;
+  background: rgb(29, 29, 4);
+  margin: 1rem;
+  color: #fff;
+}
+
+.heroBanner-actions {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+  justify-content: center;
+}
+
+.action-words {
+  display: flex;
+  background: black;
+  padding: 1rem;
+  border: none;
+  border-radius: 1rem;
+  color: #fff;
+  font-size: 1.4rem;
+}

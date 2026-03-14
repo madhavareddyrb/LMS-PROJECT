@@ -13,6 +13,7 @@ import Tooltip from "@mui/material/Tooltip";
 import MenuItem from "@mui/material/MenuItem";
 import AdbIcon from "@mui/icons-material/Adb";
 import "./Navbar.css"
+import HeroBanner from "../HeroBanner/HeroBanner";
 
 const pages = ["Home", "Courses", "Pricing"];
 const settings = ["Profile", "Account Settings",  "Logout"];
@@ -158,6 +159,7 @@ function Navbar() {
             </Box>
           </Toolbar>
         </Container>
+        <HeroBanner />
       </AppBar>
     </>
   );

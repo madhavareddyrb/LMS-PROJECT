@@ -1,17 +1,14 @@
 
 import './App.css'
-import Navbar from './Components/Navbar/Navbar'
-import CourseCards from './Components/CourseCards/CourseCards'
-import HeroBanner from './Components/HeroBanner/HeroBanner'
+import Navbar from './Components/HomePageComponents/Navbar/Navbar'
 
 
 function App() {
 
   return (
     <>
+    
       <Navbar/>
-      < HeroBanner/>
-      <CourseCards/>
     </>
   )
 }
