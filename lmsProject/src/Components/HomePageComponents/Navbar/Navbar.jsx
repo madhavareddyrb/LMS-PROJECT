@@ -12,11 +12,12 @@ import Button from "@mui/material/Button";
 import Tooltip from "@mui/material/Tooltip";
 import MenuItem from "@mui/material/MenuItem";
 import AdbIcon from "@mui/icons-material/Adb";
-import "./Navbar.css"
+import "./Navbar.css";
 import HeroBanner from "../HeroBanner/HeroBanner";
+import TopCategories from "../TopCategories/TopCategories";
 
 const pages = ["Home", "Courses", "Pricing"];
-const settings = ["Profile", "Account Settings",  "Logout"];
+const settings = ["Profile", "Account Settings", "Logout"];
 
 function Navbar() {
   const [anchorElNav, setAnchorElNav] = React.useState(null);
@@ -113,7 +114,7 @@ function Navbar() {
                 textDecoration: "none",
               }}
             >
-              LOGO
+              MERN
             </Typography>
             <Box sx={{ flexGrow: 1, display: { xs: "none", md: "flex" } }}>
               {pages.map((page) => (
@@ -159,8 +160,9 @@ function Navbar() {
             </Box>
           </Toolbar>
         </Container>
-        <HeroBanner />
       </AppBar>
+        <HeroBanner />
+      <TopCategories />
     </>
   );
 }
