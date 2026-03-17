@@ -15,6 +15,7 @@ import AdbIcon from "@mui/icons-material/Adb";
 import "./Navbar.css";
 import HeroBanner from "../HeroBanner/HeroBanner";
 import TopCategories from "../TopCategories/TopCategories";
+import { useNavigate } from "react-router-dom";
 
 const pages = ["Home", "Courses", "Pricing"];
 const settings = ["Profile", "Account Settings", "Logout"];
@@ -22,6 +23,11 @@ const settings = ["Profile", "Account Settings", "Logout"];
 function Navbar() {
   const [anchorElNav, setAnchorElNav] = React.useState(null);
   const [anchorElUser, setAnchorElUser] = React.useState(null);
+
+  const navigate = useNavigate();
+  function LoginRoute() {
+    navigate("/login");
+  }
 
   const handleOpenNavMenu = (event) => {
     setAnchorElNav(event.currentTarget);
@@ -127,6 +133,9 @@ function Navbar() {
                 </Button>
               ))}
             </Box>
+            <Box className="LoginButton" onClick={LoginRoute}>
+              Login
+            </Box>
             <Box sx={{ flexGrow: 0 }}>
               <Tooltip title="Open settings">
                 <IconButton onClick={handleOpenUserMenu} sx={{ p: 0 }}>
@@ -161,7 +170,7 @@ function Navbar() {
           </Toolbar>
         </Container>
       </AppBar>
-        <HeroBanner />
+      <HeroBanner />
       <TopCategories />
     </>
   );
