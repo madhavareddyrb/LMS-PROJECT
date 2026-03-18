@@ -16,6 +16,7 @@ import "./Navbar.css";
 import HeroBanner from "../HeroBanner/HeroBanner";
 import TopCategories from "../TopCategories/TopCategories";
 import { useNavigate } from "react-router-dom";
+import { useSelector, useDispatch } from "react-redux";
 
 const pages = ["Home", "Courses", "Pricing"];
 const settings = ["Profile", "Account Settings", "Logout"];
@@ -23,6 +24,7 @@ const settings = ["Profile", "Account Settings", "Logout"];
 function Navbar() {
   const [anchorElNav, setAnchorElNav] = React.useState(null);
   const [anchorElUser, setAnchorElUser] = React.useState(null);
+  const countValue = useSelector((state) => state.counter.value);
 
   const navigate = useNavigate();
   function LoginRoute() {
@@ -44,11 +46,16 @@ function Navbar() {
     setAnchorElUser(null);
   };
 
+  console.log(countValue);
+  
+
   return (
     <>
+            <h3>Counter value: {countValue}</h3>
       <AppBar position="static" className="navbar-section">
         <Container maxWidth="xl">
           <Toolbar disableGutters>
+            
             <Typography
               variant="h6"
               noWrap
