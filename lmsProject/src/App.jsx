@@ -5,7 +5,6 @@ import Login from "./Components/AuthenticationAndAuthriztion/Login/Login";
 import Autherization from "./Components/AuthenticationAndAuthriztion/Autherization/Autherization";
 import { Counter } from "./features/counter/Counter.jsx";
 
-
 function App() {
   return (
     <>
@@ -13,7 +12,6 @@ function App() {
         <Routes>
           <Route path="/" element={<Navbar />} />
           <Route path="/counter" element={<Counter />} />
-
           <Route path="/login" element={<Login />} />
           <Route path="/profile" element={<Autherization />} />
         </Routes>

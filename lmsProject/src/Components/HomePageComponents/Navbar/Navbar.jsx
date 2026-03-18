@@ -47,15 +47,13 @@ function Navbar() {
   };
 
   console.log(countValue);
-  
 
   return (
     <>
-            <h3>Counter value: {countValue}</h3>
+      <h3>Counter value: {countValue}</h3>
       <AppBar position="static" className="navbar-section">
         <Container maxWidth="xl">
           <Toolbar disableGutters>
-            
             <Typography
               variant="h6"
               noWrap
