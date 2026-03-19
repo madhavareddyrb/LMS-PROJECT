@@ -175,8 +175,7 @@ function Navbar() {
           </Toolbar>
         </Container>
       </AppBar>
-      <HeroBanner />
-      <TopCategories />
+      
     </>
   );
 }

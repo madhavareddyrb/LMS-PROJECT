@@ -1,0 +1,36 @@
+.features-card {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 25px;
+  max-width: 100%;
+}
+.features-card h2 {
+  font-size: 1.3rem;
+  color: rgb(8, 8, 8);
+}
+
+.feature-card {
+  background: rgb(182, 182, 185);
+  border: none;
+  border-radius: 20px;
+  max-width: 60%;
+}
+.feature-card p {
+  color: rgb(20, 19, 19);
+}
+
+.heading-why {
+  text-align: center;
+  font-size: 3rem;
+  color: rgb(51, 11, 247);
+  margin: 10px;
+  font-weight: bold;
+}
+
+.heading-message {
+  text-align: center;
+  margin: 1rem;
+  font-size: 1.7rem;
+}
