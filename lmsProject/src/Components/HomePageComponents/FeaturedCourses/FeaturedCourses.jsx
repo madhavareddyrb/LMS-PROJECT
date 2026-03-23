@@ -11,17 +11,38 @@ const courses = [
   {
     id: 1,
     title: "Generative AI",
-    image: "https://source.unsplash.com/400x300/?ai",
+    image:
+      "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTFYqoKTu_o3Zns2yExbst2Co84Gpc2Q1RJbA&s",
   },
   {
     id: 2,
     title: "IT Certifications",
-    image: "https://source.unsplash.com/400x300/?technology",
+    image:
+      "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTFYqoKTu_o3Zns2yExbst2Co84Gpc2Q1RJbA&s",
   },
   {
     id: 3,
     title: "Data Science",
-    image: "https://source.unsplash.com/400x300/?data",
+    image:
+      "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTFYqoKTu_o3Zns2yExbst2Co84Gpc2Q1RJbA&s",
+  },
+  {
+    id: 3,
+    title: "Data Science",
+    image:
+      "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTFYqoKTu_o3Zns2yExbst2Co84Gpc2Q1RJbA&s",
+  },
+  {
+    id: 3,
+    title: "Data Science",
+    image:
+      "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTFYqoKTu_o3Zns2yExbst2Co84Gpc2Q1RJbA&s",
+  },
+  {
+    id: 3,
+    title: "Data Science",
+    image:
+      "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTFYqoKTu_o3Zns2yExbst2Co84Gpc2Q1RJbA&s",
   },
 ];
 

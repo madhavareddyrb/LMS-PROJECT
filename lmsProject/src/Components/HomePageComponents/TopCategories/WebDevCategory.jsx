@@ -45,7 +45,7 @@ export default function WebDevCategory() {
     {
       id: 4,
       title: "Backend Developement",
-      instructor: "V Shiva KumarGupta",
+      instructor: "V Shiva Kumar",
       rating: "⭐ 5",
       students: 870,
       price: 1000,
@@ -59,7 +59,6 @@ export default function WebDevCategory() {
     return (
       <>
         <Card sx={{ maxWidth: 345 }}>
-
           <CardActionArea>
             <CardMedia
               component="img"
@@ -75,14 +74,15 @@ export default function WebDevCategory() {
                 {data.instructor}
               </Typography>
             </CardContent>
+            <CardActions>
+              <button className="action-button">{data.rating}</button>
+              <button className="action-button">
+                Enrolled:{data.students}
+              </button>
+              <button className="action-button tag-button">{data.tag}</button>
+            </CardActions>
+            <button className="action-button">Price: ₹{data.price}</button>
           </CardActionArea>
-
-          <CardActions>
-            <button className="action-button">{data.rating}</button>
-            <button className="action-button">Enrolled:{data.students}</button>
-            <button className="action-button tag-button">{data.tag}</button>
-          </CardActions>
-          <button className="action-button">Price: ₹{data.price}</button>
         </Card>
       </>
     );

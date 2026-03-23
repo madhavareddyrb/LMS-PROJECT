@@ -24,7 +24,7 @@ const settings = ["Profile", "Account Settings", "Logout"];
 function Navbar() {
   const [anchorElNav, setAnchorElNav] = React.useState(null);
   const [anchorElUser, setAnchorElUser] = React.useState(null);
-  const countValue = useSelector((state) => state.counter.value);
+  // const countValue = useSelector((state) => state.counter.value);
 
   const navigate = useNavigate();
   function LoginRoute() {
@@ -46,7 +46,7 @@ function Navbar() {
     setAnchorElUser(null);
   };
 
-  console.log(countValue);
+  // console.log(countValue);
 
   return (
     <>
