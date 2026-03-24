@@ -1,0 +1,31 @@
+.teachonAIO {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: -5rem 8rem;
+}
+
+.heading-teach-withus {
+  font-size: 3rem;
+  font-weight: bold;
+}
+
+.reasons-to-start {
+  font-weight: bold;
+  font-size: 2.7rem;
+  text-align: center;
+}
+
+.reasons-to-start-div {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 10px;
+
+  gap: 2rem;
+}
+
+.reasons-to-start-map-div {
+  background: #c3c0c0;
+  padding: 20px;
+}
