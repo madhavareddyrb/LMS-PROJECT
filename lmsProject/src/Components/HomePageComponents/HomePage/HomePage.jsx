@@ -11,5 +11,6 @@ export default function HomePage(){
   <TopCategories/>
   <WhyLearnWithUs/>
   <FeaturedCourses/>
+  
   </>)
 }
