@@ -4,6 +4,7 @@ import Login from "./Components/AuthenticationAndAuthriztion/Login/Login";
 import Autherization from "./Components/AuthenticationAndAuthriztion/Autherization/Autherization";
 import { Counter } from "./features/counter/Counter.jsx";
 import HomePage from "./Components/HomePageComponents/HomePage/HomePage.jsx";
+import TeachWithUsBanner from "./Components/TeachOnUsPageComponents/TeachWithUsBanner/TeachWithUsBanner.jsx";
 
 function App() {
   return (
@@ -14,6 +15,7 @@ function App() {
           <Route path="/counter" element={<Counter />} />
           <Route path="/login" element={<Login />} />
           <Route path="/profile" element={<Autherization />} />
+          <Route path="/teachwithus" element={< TeachWithUsBanner/>} />
         </Routes>
       </BrowserRouter>
     </>

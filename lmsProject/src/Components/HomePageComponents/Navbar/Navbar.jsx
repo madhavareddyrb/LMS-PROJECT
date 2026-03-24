@@ -12,10 +12,11 @@ import Button from "@mui/material/Button";
 import Tooltip from "@mui/material/Tooltip";
 import MenuItem from "@mui/material/MenuItem";
 import AdbIcon from "@mui/icons-material/Adb";
+
 import "./Navbar.css";
 import HeroBanner from "../HeroBanner/HeroBanner";
 import TopCategories from "../TopCategories/TopCategories";
-import { useNavigate } from "react-router-dom";
+import { useNavigate, NavLink } from "react-router-dom";
 import { useSelector, useDispatch } from "react-redux";
 
 const pages = ["Home", "Courses", "Pricing"];
@@ -138,6 +139,7 @@ function Navbar() {
                 </Button>
               ))}
             </Box>
+            <NavLink to="/teachwithus"></NavLink>
             <Box className="LoginButton" onClick={LoginRoute}>
               Login
             </Box>
