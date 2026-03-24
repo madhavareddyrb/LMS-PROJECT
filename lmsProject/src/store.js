@@ -4,5 +4,12 @@ import counterSlice from "./features/counter/counterSlice";
 export const store = configureStore({
   reducer: {
     counterSlice: counterSlice,
+// import { addToCartSlice } from "./features/counter/AddToCart";
+
+
+export const store = configureStore({
+  reducer: {
+    counter: counterSlice,
+    // addtocart: addToCartSlice,
   },
 });
