@@ -29,10 +29,10 @@ export default function WhyLearnWithUs() {
   const featuresData = features.map((feature) => {
     return (
       <>
-        <CardContent className="feature-card">
+        <div className="feature-card">
           <h2>{feature.title}</h2>
           <p>{feature.message}</p>
-        </CardContent>
+        </div>
       </>
     );
   });
@@ -44,7 +44,7 @@ export default function WhyLearnWithUs() {
         We focus on practical, real-world learning that helps you grow your
         career
       </h4>
-      <Card className="features-card">{featuresData}</Card>
+      <div className="features-card">{featuresData}</div>
     </>
   );
 }
