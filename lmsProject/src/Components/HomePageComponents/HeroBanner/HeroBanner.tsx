@@ -82,39 +82,39 @@ export const HeroBanner: React.FC<ResponsiveHeroBannerProps> = ({
 
   title = "Learn Skills That Build ",
   titleLine2 = "Your Future",
-  description = "Experience the cosmos like never before. Our advanced spacecraft and cutting-edge technology make interplanetary travel accessible, safe, and unforgettable.",
-  primaryButtonText = "Book Your Journey",
+  description = "Our platform offers industry-relevant courses in technology,business, design, and personal development. Learn at your own pace with high-quality lectures, real projects, quizzes, and certifications",
+  primaryButtonText = "Start Your Journey",
   primaryButtonHref = "#",
-  secondaryButtonText = "Watch Launch",
+  secondaryButtonText = "",
   secondaryButtonHref = "#",
-  partnersTitle = "Partnering with leading space agencies worldwide",
-  partners = [
-    {
-      logoUrl:
-        "https://hoirqrkdgbmvpwutwuwj.supabase.co/storage/v1/object/public/assets/assets/f7466370-2832-4fdd-84c2-0932bb0dd850_800w.png",
-      href: "#",
-    },
-    {
-      logoUrl:
-        "https://hoirqrkdgbmvpwutwuwj.supabase.co/storage/v1/object/public/assets/assets/0a9a71ec-268b-4689-a510-56f57e9d4f13_1600w.png",
-      href: "#",
-    },
-    {
-      logoUrl:
-        "https://hoirqrkdgbmvpwutwuwj.supabase.co/storage/v1/object/public/assets/assets/a9ed4369-748a-49f8-9995-55d6c876bbff_1600w.png",
-      href: "#",
-    },
-    {
-      logoUrl:
-        "https://hoirqrkdgbmvpwutwuwj.supabase.co/storage/v1/object/public/assets/assets/0d8966a4-8525-4e11-9d5d-2d7390b2c798_1600w.png",
-      href: "#",
-    },
-    {
-      logoUrl:
-        "https://hoirqrkdgbmvpwutwuwj.supabase.co/storage/v1/object/public/assets/assets/2ed33c8b-b8b2-4176-967f-3d785fed07d8_1600w.png",
-      href: "#",
-    },
-  ],
+  // partnersTitle = "Partnering with leading space agencies worldwide",
+  // partners = [
+  //   {
+  //     logoUrl:
+  //       "https://hoirqrkdgbmvpwutwuwj.supabase.co/storage/v1/object/public/assets/assets/f7466370-2832-4fdd-84c2-0932bb0dd850_800w.png",
+  //     href: "#",
+  //   },
+  //   {
+  //     logoUrl:
+  //       "https://hoirqrkdgbmvpwutwuwj.supabase.co/storage/v1/object/public/assets/assets/0a9a71ec-268b-4689-a510-56f57e9d4f13_1600w.png",
+  //     href: "#",
+  //   },
+  //   {
+  //     logoUrl:
+  //       "https://hoirqrkdgbmvpwutwuwj.supabase.co/storage/v1/object/public/assets/assets/a9ed4369-748a-49f8-9995-55d6c876bbff_1600w.png",
+  //     href: "#",
+  //   },
+  //   {
+  //     logoUrl:
+  //       "https://hoirqrkdgbmvpwutwuwj.supabase.co/storage/v1/object/public/assets/assets/0d8966a4-8525-4e11-9d5d-2d7390b2c798_1600w.png",
+  //     href: "#",
+  //   },
+  //   {
+  //     logoUrl:
+  //       "https://hoirqrkdgbmvpwutwuwj.supabase.co/storage/v1/object/public/assets/assets/2ed33c8b-b8b2-4176-967f-3d785fed07d8_1600w.png",
+  //     href: "#",
+  //   },
+  // ],
 }) => {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
 
@@ -262,7 +262,7 @@ export const HeroBanner: React.FC<ResponsiveHeroBannerProps> = ({
             </div>
           </div>
 
-          <div className="mx-auto mt-20 max-w-5xl">
+          {/* <div className="mx-auto mt-20 max-w-5xl">
             <p className="animate-fade-slide-in-1 text-sm text-white/70 text-center">
               {partnersTitle}
             </p>
@@ -276,7 +276,7 @@ export const HeroBanner: React.FC<ResponsiveHeroBannerProps> = ({
                 />
               ))}
             </div>
-          </div>
+          </div> */}
         </div>
       </div>
     </section>

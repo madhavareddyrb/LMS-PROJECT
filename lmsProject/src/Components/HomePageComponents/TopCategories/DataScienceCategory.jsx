@@ -7,6 +7,7 @@ import CardActionArea from "@mui/material/CardActionArea";
 import CardActions from "@mui/material/CardActions";
 import "./TopCategories.css";
 
+
 export default function DataScienceCategory() {
   const dataScienceData = [
     {
