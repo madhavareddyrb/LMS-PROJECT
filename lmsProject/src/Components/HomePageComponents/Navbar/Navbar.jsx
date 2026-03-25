@@ -1,24 +1,4 @@
-// import * as React from "react";
-// import AppBar from "@mui/material/AppBar";
-// import Box from "@mui/material/Box";
-// import Toolbar from "@mui/material/Toolbar";
-// import IconButton from "@mui/material/IconButton";
-// import Typography from "@mui/material/Typography";
-// import Menu from "@mui/material/Menu";
-// import MenuIcon from "@mui/icons-material/Menu";
-// import Container from "@mui/material/Container";
-// import Avatar from "@mui/material/Avatar";
-// import Button from "@mui/material/Button";
-// import Tooltip from "@mui/material/Tooltip";
-// import MenuItem from "@mui/material/MenuItem";
-// import AdbIcon from "@mui/icons-material/Adb";
-// import "./Navbar.css";
-// import HeroBanner from "../HeroBanner/HeroBanner";
-// import TopCategories from "../TopCategories/TopCategories";
-// import { useNavigate } from "react-router-dom";
-// import { useSelector, useDispatch } from "react-redux";
 
-// const pages = ["Home", "Courses", "Pricing"];
 "use client";
 
 import React, { useState, useEffect, useRef } from "react";
@@ -154,6 +134,28 @@ export default function Navbar() {
     </header>
   );
 }
+
+// import * as React from "react";
+// import AppBar from "@mui/material/AppBar";
+// import Box from "@mui/material/Box";
+// import Toolbar from "@mui/material/Toolbar";
+// import IconButton from "@mui/material/IconButton";
+// import Typography from "@mui/material/Typography";
+// import Menu from "@mui/material/Menu";
+// import MenuIcon from "@mui/icons-material/Menu";
+// import Container from "@mui/material/Container";
+// import Avatar from "@mui/material/Avatar";
+// import Button from "@mui/material/Button";
+// import Tooltip from "@mui/material/Tooltip";
+// import MenuItem from "@mui/material/MenuItem";
+// import AdbIcon from "@mui/icons-material/Adb";
+// import "./Navbar.css";
+// import HeroBanner from "../HeroBanner/HeroBanner";
+// import TopCategories from "../TopCategories/TopCategories";
+// import { useNavigate } from "react-router-dom";
+// import { useSelector, useDispatch } from "react-redux";
+
+// const pages = ["Home", "Courses", "Pricing"];
 
 
 // const settings = ["Profile", "Account Settings", "Logout"];
