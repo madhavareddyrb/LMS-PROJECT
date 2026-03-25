@@ -3,8 +3,10 @@ import { useSelector, useDispatch } from "react-redux";
 import { decrement, increment, reset } from "./counterSlice";
 
 export function Counter() {
-  const count = useSelector((state) => state.counter.value);
-  const secondNames = useSelector((state) => state.counter.secondName);
+  const count = useSelector((state) => state.counterSlice.value);
+  console.log(count);
+  
+  // const secondNames = useSelector((state) => state.counter.secondName);
   const dispatch = useDispatch();
 
   function handleAdd() {
@@ -28,7 +30,7 @@ export function Counter() {
       <button onClick={handleSub}>Sub</button>
       <button onClick={handleReset}>Reset</button>
 
-      <h2>{secondNames}</h2>
+      {/* <h2>{secondNames}</h2> */}
     </>
   );
 }

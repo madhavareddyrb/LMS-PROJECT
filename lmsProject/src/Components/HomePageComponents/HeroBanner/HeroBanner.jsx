@@ -3,8 +3,6 @@ import { useState, useEffect } from "react";
 import "./HeroBanner.css";
 
 export default function HeroBanner() {
-  
-
 
   return (
     <>
@@ -35,3 +33,24 @@ export default function HeroBanner() {
     </>
   );
 }
+
+// import { Box, Typography, Button } from "@mui/material";
+
+// export default function Hero() {
+//   return (
+//     <Box sx={{ bgcolor: "#1976d2", color: "white", p: 8 }}>
+//       <Typography variant="h3">Learn Skills That Build Your Future</Typography>
+
+//       <Typography sx={{ mt: 2 }}>
+//         Learn at your own pace with real-world projects.
+//       </Typography>
+
+//       <Button variant="contained" sx={{ mt: 3, mr: 2 }}>
+//         Start Learning
+//       </Button>
+//       <Button variant="outlined" color="inherit">
+//         Browse Courses
+//       </Button>
+//     </Box>
+//   );
+// }

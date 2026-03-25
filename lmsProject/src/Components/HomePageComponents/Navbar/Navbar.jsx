@@ -24,7 +24,7 @@ const settings = ["Profile", "Account Settings", "Logout"];
 function Navbar() {
   const [anchorElNav, setAnchorElNav] = React.useState(null);
   const [anchorElUser, setAnchorElUser] = React.useState(null);
-  const countValue = useSelector((state) => state.counter.value);
+  // const countValue = useSelector((state) => state.counter.value);
 
   const navigate = useNavigate();
   function LoginRoute() {
@@ -46,11 +46,11 @@ function Navbar() {
     setAnchorElUser(null);
   };
 
-  console.log(countValue);
+  // console.log(countValue);
 
   return (
     <>
-      <h3>Counter value: {countValue}</h3>
+      {/* <h3>Counter value: {countValue}</h3> */}
       <AppBar position="static" className="navbar-section">
         <Container maxWidth="xl">
           <Toolbar disableGutters>
@@ -108,7 +108,7 @@ function Navbar() {
                 ))}
               </Menu>
             </Box>
-            <AdbIcon sx={{ display: { xs: "flex", md: "none" }, mr: 1 }} />
+            {/* <AdbIcon sx={{ display: { xs: "flex", md: "none" }, mr: 1 }} /> */}
             <Typography
               variant="h5"
               noWrap
@@ -175,8 +175,24 @@ function Navbar() {
           </Toolbar>
         </Container>
       </AppBar>
-      
+
     </>
   );
 }
 export default Navbar;
+
+// import { AppBar, Toolbar, Typography, Button } from "@mui/material";
+
+// export default function Navbar() {
+//   return (
+//     <AppBar position="static">
+//       <Toolbar>
+//         <Typography sx={{ flexGrow: 1 }}>MERN</Typography>
+//         <Button color="inherit">Home</Button>
+//         <Button color="inherit">Courses</Button>
+//         <Button color="inherit">Pricing</Button>
+//         <Button color="inherit">Login</Button>
+//       </Toolbar>
+//     </AppBar>
+//   );
+// }

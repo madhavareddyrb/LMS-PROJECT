@@ -5,11 +5,13 @@ import TopCategories from "../TopCategories/TopCategories";
 import WhyLearnWithUs from "../WhyLearnWithUs/WhyLearnWithUs";
 
 export default function HomePage(){
-  return (<>
-  <Navbar/>
-  <HeroBanner/>
-  <TopCategories/>
-  <WhyLearnWithUs/>
-  <FeaturedCourses/>
-  </>)
+  return (
+    <>
+      <Navbar />
+      <HeroBanner />
+      <WhyLearnWithUs />
+      <TopCategories />
+      <FeaturedCourses />
+    </>
+  );
 }
