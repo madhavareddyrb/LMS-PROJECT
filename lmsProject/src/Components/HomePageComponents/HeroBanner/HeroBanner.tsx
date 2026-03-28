@@ -33,7 +33,6 @@
 //     </>
 //   );
 // }
-"use client";
 
 import React, { useState } from 'react';
 
@@ -44,14 +43,14 @@ interface NavLink {
 }
 
 interface Partner {
-    logoUrl: string;
+    // logoUrl: string;
     href: string;
 }
 
 interface ResponsiveHeroBannerProps {
-    logoUrl?: string;
+    // logoUrl?: string;
     backgroundImageUrl?: string;
-    navLinks?: NavLink[];
+    // navLinks?: NavLink[];
     ctaButtonText?: string;
     ctaButtonHref?: string;
     badgeText?: string;
@@ -68,15 +67,15 @@ interface ResponsiveHeroBannerProps {
 }
 
 export const HeroBanner: React.FC<ResponsiveHeroBannerProps> = ({
-  logoUrl = "https://hoirqrkdgbmvpwutwuwj.supabase.co/storage/v1/object/public/assets/assets/febf2421-4a9a-42d6-871d-ff4f9518021c_1600w.png",
+  // logoUrl = "https://hoirqrkdgbmvpwutwuwj.supabase.co/storage/v1/object/public/assets/assets/febf2421-4a9a-42d6-871d-ff4f9518021c_1600w.png",
   backgroundImageUrl = "https://hoirqrkdgbmvpwutwuwj.supabase.co/storage/v1/object/public/assets/assets/0e2dbea0-c0a9-413f-a57b-af279633c0df_3840w.jpg",
-  navLinks = [
-    { label: "Home", href: "#", isActive: true },
-    { label: "Missions", href: "#" },
-    { label: "Destinations", href: "#" },
-    { label: "Technology", href: "#" },
-    { label: "Book Flight", href: "#" },
-  ],
+  // navLinks = [
+  //   { label: "Home", href: "#", isActive: true },
+  //   { label: "Missions", href: "#" },
+  //   { label: "Destinations", href: "#" },
+  //   { label: "Technology", href: "#" },
+  //   { label: "Book Flight", href: "#" },
+  // ],
   ctaButtonText = "Reserve Seat",
   ctaButtonHref = "#",
 
@@ -133,10 +132,10 @@ export const HeroBanner: React.FC<ResponsiveHeroBannerProps> = ({
             <a
               href="#"
               className="inline-flex items-center justify-center bg-center w-[100px] h-[40px] bg-cover rounded"
-              style={{ backgroundImage: `url(${logoUrl})` }}
+              // style={{ backgroundImage: `url(${logoUrl})` }}
             />
 
-            <nav className="hidden md:flex items-center gap-2">
+            {/* <nav className="hidden md:flex items-center gap-2">
               <div className="flex items-center gap-1 rounded-full bg-white/5 px-1 py-1 ring-1 ring-white/10 backdrop-blur">
                 {navLinks.map((link, index) => (
                   <a
@@ -171,9 +170,9 @@ export const HeroBanner: React.FC<ResponsiveHeroBannerProps> = ({
                   </svg>
                 </a>
               </div>
-            </nav>
+            </nav> */}
 
-            <button
+            {/* <button
               onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
               className="md:hidden inline-flex h-10 w-10 items-center justify-center rounded-full bg-white/10 ring-1 ring-white/15 backdrop-blur"
               aria-expanded={mobileMenuOpen}
@@ -195,7 +194,7 @@ export const HeroBanner: React.FC<ResponsiveHeroBannerProps> = ({
                 <path d="M4 12h16" />
                 <path d="M4 19h16" />
               </svg>
-            </button>
+            </button> */}
           </div>
         </div>
       </header>

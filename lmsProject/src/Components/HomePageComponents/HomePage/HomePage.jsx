@@ -6,7 +6,7 @@ import WhyLearnWithUs from "../WhyLearnWithUs/WhyLearnWithUs";
 
 export default function HomePage(){
   return (<>
-  {/* <Navbar/> */}
+  <Navbar/>
   <HeroBanner/>
   <TopCategories/>
   <WhyLearnWithUs/>
