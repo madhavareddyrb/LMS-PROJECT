@@ -1,11 +1,21 @@
 {
   "compilerOptions": {
-    "allowJs": true,
-    "checkJs": false,
-    "baseUrl": "/",
+    "baseUrl": ".",
+     "target": "ES6",
+    "lib": ["DOM", "ES6"],
+    "jsx": "react-jsx",
+    "module": "ESNext",
+    "moduleResolution": "Node",
+    "strict": true,
+    "esModuleInterop": true,
+    "skipLibCheck": true,
     "paths": {
       "@/*": ["./src/*"]
     }
-  },
-  "include": ["src"]
+    // ...rest of your existing options
+  }
+
+  
+ 
+
 }

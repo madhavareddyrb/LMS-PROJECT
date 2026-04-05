@@ -33,13 +33,16 @@ app.post("/login", (req, res) => {
   const { email, password } = req.body;
   // console.log(req.body);
   if (email === "Madhava" && password === "12345") {
-    return res.json({
+    return res.send({
       email: email,
       password: password,
       message: "user login sucess",
     });
+    
   } else {
-    console.log("worng credentials");
+    return res.send({
+      message: "worng credentials",
+    });
   }
 });
 

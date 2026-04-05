@@ -1,10 +1,9 @@
-"use client";
+"use client"; 
 
 import React, { useRef, useState } from "react";
 import { motion } from "framer-motion";
-import "./Navbar.css"
 
-export default function Navbar() {
+function NavHeader() {
   const [position, setPosition] = useState({
     left: 0,
     width: 0,
@@ -16,16 +15,12 @@ export default function Navbar() {
       className="relative mx-auto flex w-fit rounded-full border-2 border-black bg-white p-1"
       onMouseLeave={() => setPosition((pv) => ({ ...pv, opacity: 0 }))}
     >
-      <Tab setPosition={setPosition}>Logo</Tab>
-      <Tab setPosition={setPosition}>Explore</Tab>
-      <Tab setPosition={setPosition}>Courses</Tab>
-      <Tab setPosition={setPosition}>
-        <input className="input-tag-search" type="text" placeholder="search" />{" "}
-      </Tab>
-      {/* <Tab setPosition={setPosition}>Services</Tab> */}
-      {/* <Tab setPosition={setPosition}>Contact</Tab> */}
-      <Tab setPosition={setPosition}>Teach On Udemy</Tab>
-      <Tab setPosition={setPosition}>Login</Tab>
+      <Tab setPosition={setPosition}>Home</Tab>
+      <Tab setPosition={setPosition}>Pricing</Tab>
+      <Tab setPosition={setPosition}>About</Tab>
+      <Tab setPosition={setPosition}>Services</Tab>
+      <Tab setPosition={setPosition}>Contact</Tab>
+
       <Cursor position={position} />
     </ul>
   );
@@ -68,4 +63,4 @@ const Cursor = ({ position }: { position: any }) => {
   );
 };
 
-
+export default NavHeader;
