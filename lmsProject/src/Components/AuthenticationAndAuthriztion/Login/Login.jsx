@@ -5,23 +5,29 @@ import { useNavigate } from "react-router-dom";
 
 export default function Login() {
   const [loginin, setLoginIn] = useState();
-  const naviagte = useNavigate()
+  const naviagte = useNavigate();
+  const [email, setEmail] = useState("");
+  const [password, setPassword] = useState("");
 
-  const userDetails = {
-    email: "john@mail.com",
-    password: "changeme",
-  };
+  // const userDetails = {
+  //   email: "john@mail.com",
+  //   password: "changeme",
+  // };
 
   const handleLogin = async () => {
     try {
       const response = await axios.post(
-        "https://api.escuelajs.co/api/v1/auth/login",
-        userDetails,
+        "http://localhost:3000/login",
+
+        {
+          email,
+          password,
+        },
       );
 
       setLoginIn(response.data.access_token);
       localStorage.setItem("access_token", response.data.access_token);
-      naviagte("/profile")
+      naviagte("/");
     } catch (error) {
       alert(error);
     }
@@ -30,10 +36,20 @@ export default function Login() {
   return (
     <>
       <Box className="loginform">
-        <label htmlFor="">UserName</label>
-        <input type="text" />
-        <label htmlFor="">Password</label>
-        <input type="password" />
+        <label htmlFor="">UserName: </label>
+        <input
+          type="text"
+          placeholder="username"
+          value={email}
+          onChange={(e) => setEmail(e.target.value)}
+        />
+        <label htmlFor="">Password: </label>
+        <input
+          type="password"
+          placeholder="Password"
+          value={password}
+          onChange={(e) => setPassword(e.target.value)}
+        />
         <button onClick={handleLogin}>Login</button>
       </Box>
     </>
